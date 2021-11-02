@@ -21,40 +21,40 @@
 
             <LinearLayout
                 android:id="@+id/linear4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="horizontal">
+
+                <VideoView
+                    android:duplicateParentState="true"
+                    android:id="@+id/videoview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical" />
 
                 <LinearLayout
-                    android:layout_width="410dp"
+                    android:id="@+id/linear6"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:translationX="-1dp"
+                    android:padding="8dp">
 
-                    <VideoView
-                        android:id="@+id/videoview1"
+                    <ImageView
+                        android:id="@+id/imageview1"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
-                        android:layout_gravity="center_horizontal|center_vertical" />
+                        android:layout_height="100dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/logo_app" />
 
-                    <LinearLayout
-                        android:layout_width="410dp"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:translationX="-410dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textColor="@color/colorPrimaryDark"
+                        />
 
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:src="@drawable/app_icon" />
-						<TextView
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:text="@string/app_name"
-							android:textColor="@color/colorControlHighlight"
-							/>
-                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
